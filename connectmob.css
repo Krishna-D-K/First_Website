@@ -1,0 +1,38 @@
+
+#txt{
+    font-size: 30px;
+}
+#footer{
+    font-size: 20px;
+}
+#content{
+    height: 50px;
+}
+#links{
+    bottom: 120px;
+}
+#fcbk{
+    height: 80px;
+    width: 84px;
+    position: relative;
+    top: 4px;
+}
+#insta{
+    height: 83px;
+    width: 99px;
+}
+#twt{
+    height: 83px;
+    width: 86px;
+}
+#yt{
+    height: 78px;
+    width: 99px;
+}
+#linkedin{
+    height: 83px;
+    width: 89px;
+}
+#navbar a{
+    font-size: 20px;
+}

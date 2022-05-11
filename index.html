@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna's Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexmob.css" media="screen and (max-width: 1020px)">
+    <style>
+        *{
+            margin: 0px;
+        }
+        .heading{
+            /* border: 2px solid red; */
+            height: 90vh;
+            /* background-color: antiquewhite; */
+            display: flexbox;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            z-index: -1;
+        }
+        .heading::after{
+            content: "";
+            background-image: url('iitkgp.jpg');
+            background-size: cover;
+            background-repeat:no-repeat;
+            position: absolute;
+            background-attachment: local;
+            top: -41vh;
+            right: 0vw;
+            bottom: 7vh;
+            left: 0vw;
+            opacity: 0.9;
+            z-index: -1;
+            animation-name: bgimg;
+            animation-duration: 8s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bgimg{
+            0%{
+                background-image: url('iitkgp.jpg');
+                background-size: cover;
+                background-repeat:no-repeat;
+                position: absolute;
+                background-attachment: local;
+                top: -41vh;
+                right: 0vw;
+                bottom: 7vh;
+                left: 0vw;
+                opacity: 0.9;
+                z-index: -1;
+            }
+            50%{
+                background-image: url('circuit.jpg');
+                background-size: cover;
+                background-repeat:no-repeat;
+                position: absolute;
+                background-attachment: local;
+                top: -41vh;
+                right: 0vw;
+                bottom: 7vh;
+                left: 0vw;
+                opacity: 0.9;
+                z-index: -1;
+            }
+        }
+        .heading div{
+            display: inline-block;
+            width: 43vw;
+            /* border: 2px solid green; */
+            height: 15vh;
+            margin: 0.14vw 0.14vw;
+            position: absolute;
+            top: 64vh;
+            right: 5vw;
+            bottom: 10vh;
+            left: 5vh;
+            color: #e9e3e0;
+            text-shadow: 0.21vw 0.21vw 0.56vw #0300c6;
+            font-size: 1.54vw;
+            font-family: 'Kaushan Script', cursive;
+            animation-name: shadowcolor;
+            animation-duration: 8s;
+            animation-iteration-count: 100;
+        }
+        @keyframes shadowcolor{
+            0%{
+            text-shadow: 0.21vw 0.21vw 0.42vw #0300c6;
+            }
+            
+            50%{
+            color: #0300c6;
+            text-shadow: 0.21vw 0.21vw 0.7vw #cfcbcb;
+            }
+            
+        }
+        .navbar{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            /* border: 2px solid red; */
+            margin: 0.14vw 0.28vw;
+            /* background-color: aqua; */
+            height: 6vh;
+            position: fixed;
+            top: 3vh;
+            left: 0vw;
+            right: 0vw;
+            z-index: 1;
+        }
+        .anchortags{
+            /* border: 2px solid green; */
+            align-content: center;
+            text-align: center;
+            margin: 0.56vw auto;
+            position: relative;
+            font-family: 'Baloo Bhai 2', cursive;
+            z-index: 1;
+        }
+        
+        .navbar a{
+            border: 0.14vw solid black;
+            padding: 0.14vw 1.4vw 0.14vw 1.4vw;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.75vw;
+            color: #ece1e1;
+            border: 0.21vw solid white;
+            border-radius: 0.7vw;
+            background-color: #4f4da5;
+            transition-property: background-color, font-size, color, box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .navbar a:hover{
+            font-size: 1.96vw;
+            background-color: #2e2caf;
+            color: white;
+            box-shadow: 0.21vw 0.21vw 0.35vw black;
+        }
+        .intro{
+            background-color: blanchedalmond;
+            display: flex;
+            height: 75vh;
+            border: 0.14vw solid blue;
+            margin: 0.28vw 0vw;
+        }
+        
+        .content{
+            border: 0.14vw solid black;
+            border-radius: 2.52vw;
+            width: 60%;
+            padding: 1.4vw;
+            margin: 0.35vw;
+            text-align: center;
+            z-index: 1;
+            color: rgb(0,0,0);
+            text-shadow: 0.07vw 0.07vw #b2afaf;
+            font-size: 2.1vw;
+            font-family: 'Dancing Script', cursive;
+            background-color: #d1c7b7;
+            box-shadow: 0.21vw 0.21vw 0.42vw #754b4b;
+        }
+        .image{
+            border: 0.14vw solid #ffebcd;
+            border-radius: 50%;
+            width: 25%;
+            height: 52vh;
+            padding: 1.4vw;
+            margin-top: 4%;
+            margin-left: 2%;
+            margin-right: 2%;
+            text-align: center;
+            background-color: #232431;
+            background-image: url('My project (3).png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:  center 4vh;
+            background-attachment: local;
+            z-index: 1;
+            box-shadow: 0.21vw 0.21vw 0.56vw black;
+        }
+        .footer{
+            height: 3vh;
+            border: 0.14vw solid red;
+            margin-bottom: 0.56vw;
+            font-size: 1.26vw;
+            text-align: center;
+        }
+        nav{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="anchortags">
+        <a  href="index.html">Home</a>
+        <a  href="about.html">About Me</a>
+        <a  href="skills.html">Skills</a>
+        <a  href="connect.html">Contact</a>
+    </div>
+    </div>
+    <div class="heading" >
+        <div id="heading">
+            <h1>Greetings From Krishna !!</h1>
+        </div>
+    </div>
+    <div class="intro" id="intro">
+        <div class="image" id="image">
+        </div>
+        <div class="content" id="content">
+            <h2>Hi There!!!</h2> <br>
+            This is Krishna Kolte. I am a first year undergraduate student of the department of Electrical Engineering enrolled in its 4 year B-Tech course at IIT Kharagpur, West Bengal. I'm a boarder of Patel Hall of Residence. <br> <br>
+            I'm currently a begineer in the vast field of Web Development. So, bear with me and my portfolio website. :)  <br> <br>
+            Do visit the links above to learn about me more !!
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <h3> &#169 2022 Krishna Kolte. All Rights Reserved. </h3>
+    </div>
+</body>
+</html>

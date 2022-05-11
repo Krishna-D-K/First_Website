@@ -1,0 +1,45 @@
+#left{
+    width: 95%;
+    font-size: 20px;
+}
+#right{
+    width: 95%;
+    font-size: 20px;
+}
+#content{
+    flex-direction: column;
+    width: 99%;
+}
+#footer{
+    font-size: 20px;
+    width: 99%;
+}
+#title{
+    font-size: 23px;
+    width: 99%;
+}
+#navbar a{
+    font-size: 20px;
+}
+#pic{
+    height: 37.3vh;
+}
+.pic::after{
+    display: none;
+}
+.pic::before{
+    content: "";
+    background-image: url('skills.jpg');
+    width: 99.93vw;
+    height: 47vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -0.62vw;
+    left: 0vw;
+    bottom: 0px;
+    right: 0px;
+    background-attachment: local;
+    z-index: -1;
+    opacity: 0.95;
+}

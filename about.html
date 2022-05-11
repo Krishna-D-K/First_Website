@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aboutmob.css" media="screen and (max-width: 1020px)">
+    <style>
+        *{
+            margin: 0px;
+        }
+        .navbar{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            /* border: 2px solid red; */
+            margin: 0.132vw 0.264vw;
+            /* background-color: aqua; */
+            height: 6vh;
+            position: fixed;
+            top: 3vh;
+            left: 0vw;
+            right: 0vw;
+        }
+        .anchortags{
+            /* border: 2px solid green; */
+            align-content: center;
+            text-align: center;
+            margin: 0.524vw auto;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .navbar a{
+            border: 0.132vw solid black;
+            padding: 0.132vw 1.32vw 0.132vw 1.32vw;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.65vw;
+            color: white;
+            border: 0.198vw solid white;
+            border-radius: 0.66vw;
+            background-color: #4f4da5;
+            z-index: 1;
+            transition-property: background-color, font-size, color, box-shadow;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .navbar a:hover{
+            font-size: 1.848vw;
+            background-color: #2e2caf;
+            color: white;
+            box-shadow: 0.198vw 0.198vw 0.33vw black;
+        }
+        .pic{
+            height: 51vh;
+            border-bottom: 0.132vw solid red;
+        }
+        
+        .pic::after{
+            content: "";
+            background-image: url('about.jpg');
+            width: 98.9vw;
+            height: 105vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -25.014vw;
+            left: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-attachment: local;
+            z-index: -1;
+        }
+        .content{
+            height: 60vh;
+            padding-top: 1.452vw;
+            border-top: 0.132vw solid red;
+            text-align: center;
+            z-index: 1;
+            color: #564141;
+            text-shadow: 0.066vw 0.066vw #b2afaf;
+            font-size: 2.244vw;
+            font-family: 'Dancing Script', cursive;
+            background-color: #daa9a4;
+        }
+        .footer{
+            height: 3vh;
+            border: 0.132vw solid red;
+            margin: 0.132vw;
+            font-size: 1.188vw;
+            text-align: center;
+        }
+        h2{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="anchortags">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="connect.html">Contact</a>
+    </div>
+    </div>
+    <div class="pic">
+        
+    </div>
+        <div class="content" id="content">
+            <h2>About Me</h2>
+        Myself Krishna Kolte. My hometown is Aurangabad, Maharashtra. I've completed my school, high school and Jr. college in Aurangabad. And currently, I am a first year undergraduate student of the department of Electrical Engineering enrolled in its 4 year B-Tech course at IIT Kharagpur, West Bengal. I'm a boarder of Patel Hall of Residence.  <br>
+        I would love to hear about you and your interests. Do connect with me !!
+         <br> 
+        Do visit the links above to learn about me more !!
+    </div>
+    <div class="footer" id="footer">
+        &#169 2022 Krishna Kolte. All Rights Reserved. 
+    </div>
+</body>
+</html>

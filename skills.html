@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Intrests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="skillsmob.css" media="screen and (max-width: 1020px)">
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background-color: #aab9d6;
+        }
+        .navbar{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            /* border: 2px solid red; */
+            margin: 0.14vw 0.28vw;
+            /* background-color: aqua; */
+            height: 6vh;
+            position: fixed;
+            top: 3vh;
+            left: 0vw;
+            right: 0vw;
+            z-index: 1;
+        }
+        .anchortags{
+            /* border: 2px solid green; */
+            align-content: center;
+            text-align: center;
+            margin: 0.56vw auto;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .navbar a{
+            border: 0.14vw solid black;
+            padding: 0.14vw 1.4vw 0.14vw 1.4vw ;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.75vw;
+            color: white;
+            border: 0.21vw solid white;
+            border-radius: 0.7vw;
+            background-color: #4f4da5;
+            transition-property: background-color, font-size, color, box-shadow;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .navbar a:hover{
+            font-size: 1.96vw;
+            background-color: #2e2caf;
+            color: white;
+            box-shadow: 0.21vw 0.21vw 0.35vw black;
+        }
+        .pic{
+            height: 66vh;
+            /* border: 2px solid red; */
+        }
+        .pic::after{
+            content: "";
+            background-image: url('skills.jpg');
+            width: 98.93vw;
+            height: 104vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -18.62vw;
+            left: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-attachment: local;
+            z-index: -1;
+            opacity: 0.95;
+        }
+        
+        .content{
+            height: 60vh;
+            /* border: 2px solid red; */
+            /* text-align: center; */
+            display: flex;
+            z-index: 1;
+            color: rgb(0,0,0);
+            background-color: #aab9d6;
+            text-shadow: 0.07vw 0.07vw #b2afaf;
+            font-size: 1.82vw;
+            font-family: 'Slabo 27px', serif;
+        }
+        .title{
+            display: block;
+            border: 0.35vw solid #328785;
+            border-radius: 2vw;
+            font-size: 2.1vw;
+            font-family: 'Play', sans-serif;
+            background-color: #328785;
+            text-align: center;
+        }
+        .left{
+            border: 0.21vw solid rgb(16, 88, 165);
+            display: inline;
+            height: 50vh;
+            width: 48vw;
+            margin: 1vw 2vw;
+            opacity: 0;
+            padding: 0.91vw;
+            color: whitesmoke;
+            border-radius: 4vw;
+            animation-name: leftanim;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes leftanim{
+            from{
+                background-color: #5d8ec2;
+                opacity: 0;
+            }
+            to{
+                background-color: #5d8ec2;
+                box-shadow: 0.56vw 0.56vw 1.05vw black;
+                opacity: 1;
+            }
+        }
+        .right{
+            border: 0.21vw solid rgb(16, 88, 165);
+            display: inline;
+            height: 50vh;
+            opacity: 0;
+            margin: 1vw 2vw;
+            width: 48vw;
+            padding: 0.91vw;
+            color: whitesmoke;
+            border-radius: 4vw;animation-name: rightanim;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+        @keyframes rightanim{
+            from{
+                background-color: #5d8ec2;
+                opacity: 0;
+            }
+            to{
+                background-color: #5d8ec2;
+                box-shadow: 0.56vw 0.56vw 1.05vw black;
+                opacity: 1;
+            }
+        }
+        .footer{
+            height: 3vh;
+            padding-bottom: 0.21vw;
+            border: 0.14vw solid red;
+            background-color: white;
+            margin: 0.14vw;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body> 
+    <div class="navbar" id="navbar">
+        <div class="anchortags">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="connect.html">Contact</a>
+    </div>
+    </div>
+    <div class="pic" id="pic">
+
+    </div>
+    <div class="title" id="title">Listing below a few of my <strong>Skills & Interests</strong> .But these are frequently updating things. :)</div>
+    <div class="content" id="content">
+        <div class="left" id="left">
+            <ul>
+                <li>Can program using C & C++ programming languages.</li>
+                <li>Learning Web Dev using HTML, CSS & JavaScript.</li>
+                <li>Learned C and C++ programming lanuages.</li>
+                <li>Learned C and C++ programming lanuages.</li>
+
+            </ul>
+        </div>
+        <div class="right" id="right">
+            <ul>
+                <li>Movies, Webseries & Music.</li>
+                <li>Playing sports of all kinds.</li>
+                <li>Debates and Group Discussions.</li>
+                <li>Improving my skillset. :)</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        &#169 2022 Krishna Kolte. All Rights Reserved. 
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+#heading{
+    font-size: 15px;
+}
+#intro{
+    flex-direction: column;
+    position: relative;
+    top: -42px;
+}
+#footer{
+    font-size: 10px;
+    position: relative;
+    top: -20px;
+}
+#content{
+    width: 95%;
+    font-size: 16px;
+}
+#image{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 50%;
+    width: 65%;
+}
+#navbar a{
+    font-size: 20px;
+}
+.heading::after{
+    display: none;
+}
+.heading::before{
+    content: "";
+            background-image: url('iitkgp.jpg');
+            background-size: cover;
+            background-repeat:no-repeat;
+            position: absolute;
+            background-attachment: local;
+            top: -41vh;
+            right: 0vw;
+            bottom: 7vh;
+            left: -133vw;
+            opacity: 0.9;
+            z-index: -1;
+            animation-name: bgimg;
+            animation-duration: 8s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bgimg{
+            0%{
+                background-image: url('iitkgp.jpg');
+                background-size: cover;
+                background-repeat:no-repeat;
+                position: absolute;
+                background-attachment: local;
+                top: -41vh;
+                right: 0vw;
+                bottom: 7vh;
+                left: -133vw;
+                opacity: 0.9;
+                z-index: -1;
+            }
+            50%{
+                background-image: url('circuit.jpg');
+                background-size: cover;
+                background-repeat:no-repeat;
+                position: absolute;
+                background-attachment: local;
+                top: -41vh;
+                right: 0vw;
+                bottom: 7vh;
+                left: -90vw;
+                opacity: 0.9;
+                z-index: -1;
+            }
+        }

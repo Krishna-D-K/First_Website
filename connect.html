@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1020px)" href="connectmob.css">
+    <style>
+        .content::after{
+            content: "";
+            background-image: url('pexels-pixabay-259915.jpg');
+            background-size: cover;
+            height: 141%;
+            width: 100%;
+            position: absolute;
+            top: -45vh;
+            right: 0px;
+            bottom: 10vh;
+            left: 0px;
+            opacity: 0.92;
+            background-repeat: no-repeat;
+            background-position:  center center;
+            background-attachment: local;
+            z-index: -1;
+        }
+        .navbar{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            /* border: 5px solid white; */
+            margin: 0.129vw 0.258vw;
+            /* background-color: aqua; */
+            height: 6vh;
+            position: fixed;
+            top: 3vh;
+            left: 0vw;
+            right: 0vw;
+            z-index: 1;
+        }
+        .anchortags{
+            /* border: 2px solid green; */
+            align-content: center;
+            text-align: center;
+            margin: 0.516vw auto;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .navbar a{
+            /* border: 2px solid black; */
+            padding: 0.129vw 1.29vw 0.129vw 1.29vw;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.6125vw;
+            color: white;
+            border: 0.1935vw solid white;
+            border-radius: 0.645vw;
+            background-color: #4f4da5;
+            z-index: 1;
+            transition-property: background-color, font-size, color, box-shadow;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+        .navbar a:hover{
+            font-size: 1.806vw;
+            background-color: #2e2caf;
+            color: white;
+            box-shadow: 0.1935vw 0.1935vw 0.3225vw black;
+        }
+        .content{
+            height: 60vh;
+            /* border: 2px solid red; */
+            font-family: 'Kaushan Script', cursive;
+            padding: 30vh 0.3225vw 1.935vw 0.3225vw;
+            z-index: 1;
+            color: #040318;
+        }
+        .txt{
+            margin: auto auto;
+            font-size: 2.2575vw;
+            text-align: center;
+            z-index: 1;
+            text-shadow: 0.129vw 0.129vw 0.129vw #8d7272;
+        }
+        .footer{
+            height: 3vh;
+            border-top: 0.129vw solid red;
+            border-bottom: 0.129vw solid red;
+            margin: 0.129vw;
+            font-size: 1.161vw;
+            text-align: center;
+            width: 99.5vw;
+            position: absolute;
+            bottom: 0.0645vw;
+            left:0.129vw;
+        }
+        .links{
+            display: flex;
+            /* border: 2px solid red; */
+            height: 14vh;
+            position: absolute;
+            bottom: 32vh;
+            left: 0vw;
+            right: 0vh;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            z-index: 1;
+            opacity: 1;
+        }
+        .links img{
+            padding: 2vh;
+            margin: -11vh;
+            margin-top: 0vh;
+            padding-top: 0vh;
+            height: 12vh;
+            width: 12vh;
+        }
+        #insta{
+            height: 12vh;
+            width: 14vh;
+        }
+        #fb{
+            position: relative;
+            top: 0.258vw;
+            height: 11.5vh;
+            width: 11.5vh;
+        }
+        #yt{
+            height: 10.5vh;
+            width: 13vh;
+        }
+        .links a:hover{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="anchortags">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="connect.html">Contact</a>
+    </div>
+    </div>
+    <div class="content" id="content">
+        <div class="txt" id="txt">
+        I Would love to know about your intrests and hobbies as well. <br>Do contact me using these links and share your thoughts and opinions with me !!
+        </div>
+    </div>
+    <div class="links" id="links">
+        <a href="https://en-gb.facebook.com/people/Krishna-Kolte/100074550491680/" id="fb" target="_blank"><img src="facebook.png" alt="noimg" id="fcbk"></a>
+        <a href="https://www.instagram.com/krishna_d_k/" id="fb" target="_blank"><img src="instagram.png" alt="noimg" id="insta" ></a>
+        <a href="https://twitter.com/i/flow/login" id="fb" target="_blank"><img src="twitter.png" alt="noimg" id="twt"></a>
+        <a href="https://www.youtube.com/channel/UC23VdDE0J2XLVvPWWUwLgpg/featured" id="fb" target="_blank"><img src="youtube.png" alt="noimg" id="yt"></a>
+        <a href="https://www.linkedin.com/login" id="fb" target="_blank"><img src="linkedin.png" alt="noimg" id="linkedin"></a>
+    </div>
+    <div class="footer" id="footer">
+         &#169 2022 Krishna Kolte. All Rights Reserved. 
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    background-color: #d6675c;
+}
+#content{
+    font-size: 23px;
+    width: 110.5vw;
+}
+#footer{
+    font-size: 16px;
+    background-color: white;
+}
+#navbar a{
+    font-size: 20px;
+}
+.pic::after{
+    display: none;
+}
+.pic::before{
+    content: "";
+    background-image: url('about.jpg');
+    width: 122.5vw;
+    height: 105vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -0.014vw;
+    left: -12vw;
+    bottom: 0px;
+    right: 0px;
+    /* background-attachment: local; */
+    z-index: -1;
+}
